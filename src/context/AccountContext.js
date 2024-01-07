@@ -14,7 +14,7 @@ export function AccountProvider({ children }) {
     const socket = useRef();
 
     useEffect(() => {
-        socket.current = io('http://localhost:8080');
+        socket.current = io('wss://localhost:8080');
     }, [])
 
     useEffect(() => {
